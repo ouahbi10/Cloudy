@@ -113,7 +113,7 @@ export default {
 
       try {
         const response = await fetch(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${this.searchQuery}&limit=4&appid=53eb0069d174e99a966a9bb6772f4f7e`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${this.searchQuery}&limit=4&appid=53eb0069d174e99a966a9bb6772f4f7e`
         );
         const data = await response.json();
         this.searchResult = data;
